@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp, getFirestore } from "firebase/app";
-
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyBOPBbl5cAvMktlztqX-3yTYHrZkLrlmNQ",
   authDomain: "drhome-620c2.firebaseapp.com",
