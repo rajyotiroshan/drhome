@@ -1,6 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
 body,
 html {
-  background-color: #e4e4e4;
+  background-color: #e4e4e4 !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: black !important;
 }
 
 /* colors and backgrounds*/
@@ -41,11 +52,51 @@ html {
 .p-2 {
   padding: 20px;
 }
+
+.p-3 {
+  padding: 30px;
+}
+
+.py-1 {
+  padding: 10px;
+}
+
+.py-2 {
+  padding: 20px;
+}
+
+.py-3 {
+  padding: 30px;
+}
+
+.m-1 {
+  padding: 10px;
+}
+.m-2 {
+  padding: 20px;
+}
+
+.m-3 {
+  padding: 30px;
+}
+
+.my-1 {
+  padding: 10px;
+}
+.my-2 {
+  padding: 20px;
+}
+
+.my-3 {
+  padding: 30px;
+}
+
 /* form-elements*/
 
 input {
   width: 100%;
   height: 45px !important;
+  padding-left: 15px;
   border: 1px solid rgb(192, 190, 190);
 }
 
@@ -72,4 +123,20 @@ input:focus {
   text-transform: uppercase;
   border: 1px solid black;
   width: 100%;
+}
+
+/* text class*/
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ant override*/
+
+.ant-form-iem {
+  margin-bottom: 8px !important;
 }
