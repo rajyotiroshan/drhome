@@ -2,7 +2,7 @@ import { Button, Form, message } from "antd";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { LoginUser } from "../../apicalls/users";
+import { LoginUser } from "../../apicalls/users.js";
 import { ShowLoader } from "../../redux/loaderSlice";
 
 function Login() {

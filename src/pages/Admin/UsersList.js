@@ -2,7 +2,7 @@ import { message, Table } from "antd";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
-import { GetAllUsers } from "../../apicalls/users";
+import { GetAllUsers } from "../../apicalls/users.js";
 import { ShowLoader } from "../../redux/loaderSlice";
 
 function UsersList() {

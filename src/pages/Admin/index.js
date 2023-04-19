@@ -4,7 +4,7 @@ import UsersList from "./UsersList";
 import DoctorsList from "./DoctorsList";
 import { useDispatch } from "react-redux";
 import { ShowLoader } from "../../redux/loaderSlice";
-import { GetUserById } from "../../apicalls/users";
+import { GetUserById } from "../../apicalls/users.js";
 
 function Admin() {
   const [isAdmin, setIsAdmin] = React.useState(false);
@@ -31,16 +31,18 @@ function Admin() {
     checkIsAdmin();
   }, []);
   return (
-    isAdmin && <div className="bg-white p-1">
-      <Tabs>
-        <Tabs.TabPane tab="Users" key="1">
-          <UsersList />
-        </Tabs.TabPane>
-        <Tabs.TabPane tab="Doctors" key="2">
-          <DoctorsList />
-        </Tabs.TabPane>
-      </Tabs>
-    </div>
+    isAdmin && (
+      <div className="bg-white p-1">
+        <Tabs>
+          <Tabs.TabPane tab="Users" key="1">
+            <UsersList />
+          </Tabs.TabPane>
+          <Tabs.TabPane tab="Doctors" key="2">
+            <DoctorsList />
+          </Tabs.TabPane>
+        </Tabs>
+      </div>
+    )
   );
 }
 
