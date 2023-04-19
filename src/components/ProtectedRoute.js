@@ -15,8 +15,8 @@ function ProtectedRoute({ children }) {
     <div className="layout p-1">
       <div className="header bg-white p-2 flex justify-between items-center">
         <h2 className="cursor-pointer" onClick={() => navigate("/")}>
-          <strong className="text-primary">DR</strong>
-          <strong className="text-secondary">HOME</strong>
+          <strong className="text-primary">Dr.</strong>
+          <strong className="text-secondary"> HOME</strong>
         </h2>
 
         {user && (
