@@ -2,7 +2,7 @@ import { message } from "antd";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { GetDoctorById } from "../../apicalls/doctors";
+import { GetDoctorById } from "../../apicalls/doctors.js";
 import { ShowLoader } from "../../redux/loaderSlice";
 import moment from "moment";
 import {
