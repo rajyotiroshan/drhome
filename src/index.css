@@ -139,9 +139,7 @@ p {
 }
 
 /* form-elements */
-input,
-textarea,
-select {
+input , textarea , select{
   height: 45px !important;
   border: 1px solid #909090;
   padding-left: 15px;
@@ -149,14 +147,12 @@ select {
   border-radius: 4px;
 }
 
-input:focus,
-textarea,
-select {
+input:focus , textarea , select{
   outline: none;
   border: 1px solid #494949;
 }
 
-textarea {
+textarea{
   min-height: 100px;
   padding-top: 20px;
 }
@@ -173,7 +169,7 @@ textarea {
 
 .outlined-btn {
   height: 45px !important;
-
+ 
   background-color: white !important;
   color: black !important;
   text-transform: uppercase;
@@ -215,6 +211,7 @@ text classes */
   z-index: 999;
 }
 
-hr {
+
+hr{
   border: 1px solid #d3d2d2;
 }
