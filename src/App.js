@@ -4,8 +4,9 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import ProtectedRoute from "./components/ProtectedRoute";
-
+import { useSelector } from "react-redux";
 function App() {
+  const { loading } = useSelector((state) => state.loader);
   return (
     <div className="App">
       <BrowserRouter>
