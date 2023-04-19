@@ -1,7 +1,7 @@
 import { message, Table } from "antd";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { GetAllDoctors, UpdateDoctor } from "../../apicalls/doctors";
+import { GetAllDoctors, UpdateDoctor } from "../../apicalls/doctors.js";
 import { ShowLoader } from "../../redux/loaderSlice";
 
 function DoctorsList() {
