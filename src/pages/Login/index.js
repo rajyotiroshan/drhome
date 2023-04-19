@@ -10,9 +10,9 @@ function Login() {
   const dispatch = useDispatch();
   const onFinsh = async (values) => {
     try {
-      dispatch(ShowLoader(true))
+      dispatch(ShowLoader(true));
       const response = await LoginUser(values);
-      dispatch(ShowLoader(false))
+      dispatch(ShowLoader(false));
       if (response.success) {
         message.success(response.message);
         localStorage.setItem(
@@ -27,7 +27,7 @@ function Login() {
         throw new Error(response.message);
       }
     } catch (error) {
-      dispatch(ShowLoader(false))
+      dispatch(ShowLoader(false));
       message.error(error.message);
     }
   };
@@ -40,7 +40,7 @@ function Login() {
     <div className="flex justify-center items-center h-screen">
       <Form layout="vertical" className="w-400 bg-white p-2" onFinish={onFinsh}>
         <h2 className="uppercase my-1">
-          <strong>SHEYHELTHY Login</strong>
+          <strong>Dr. Home Login</strong>
         </h2>
         <hr />
 

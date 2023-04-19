@@ -45,8 +45,8 @@ function UsersList() {
     {
       title: "Role",
       dataIndex: "role",
-      render : (role) => role.toUpperCase()
-    }
+      render: (role) => role.toUpperCase(),
+    },
   ];
   return (
     <div>

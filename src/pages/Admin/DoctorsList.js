@@ -69,9 +69,9 @@ function DoctorsList() {
     {
       title: "Status",
       dataIndex: "status",
-      render : (text, record) => {
-        return text.toUpperCase()
-      }
+      render: (text, record) => {
+        return text.toUpperCase();
+      },
     },
     {
       title: "Actions",
