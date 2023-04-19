@@ -7,7 +7,7 @@ import {
   CheckIfDoctorAccountIsApplied,
   GetDoctorById,
   UpdateDoctor,
-} from "../../apicalls/doctors";
+} from "../../apicalls/doctors.js";
 import { ShowLoader } from "../../redux/loaderSlice";
 
 function DoctorForm() {
